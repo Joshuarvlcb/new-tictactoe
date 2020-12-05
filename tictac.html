@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Joshua Ruvalcaba" />
+    <meta name='description content=' '>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:decription" content="" />
+    <title>Tic Tac toe</title>
+    <link rel="stylesheet" href="tictac.css" />
+    <link rel='shortcut icon ' href=' type='image/x-icon'>
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Tic-Tac-Toe</h1>
+        </header>
+
+        <div class="player-turn">
+            <p id='player'>Player X Starts</p>
+            <p id='turn'>Turn: </p>
+        </div>
+
+        <div class="play-area">
+            <div id="block_0" class="block" onclick="clickOutcome('block_0')"></div>
+            <div id="block_1" class="block" onclick="clickOutcome('block_1')"></div>
+            <div id="block_2" class="block" onclick="clickOutcome('block_2')"></div>
+            <div id="block_3" class="block" onclick="clickOutcome('block_3')"></div>
+            <div id="block_4" class="block" onclick="clickOutcome('block_4')"></div>
+            <div id="block_5" class="block" onclick="clickOutcome('block_5')"></div>
+            <div id="block_6" class="block" onclick="clickOutcome('block_6')"></div>
+            <div id="block_7" class="block" onclick="clickOutcome('block_7')"></div>
+            <div id="block_8" class="block" onclick="clickOutcome('block_8')"></div>
+        </div>
+        <p class='count'>Wins</p>
+        <div class="wins">
+            <p id='x_wins'>X - </p>
+            <button id='reset' onclick="reset()">reset</button>
+            <p id='o_wins'>O - </p>
+        </div>
+
+    </div>
+
+    <script src="./tictac.js"></script>
+</body>
+
+</html>
