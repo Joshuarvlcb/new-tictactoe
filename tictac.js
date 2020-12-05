@@ -66,6 +66,12 @@ function clickOutcome(block) {
             document.getElementById('turn').textContent = (`Turn: ${turn}`)
 
         }
+        //draw
+            
+        if(document.getElementById('turn').textContent == 'Turn: 9'){
+            playerDisplay.textContent = "Draw";
+
+        }
 WINNING_COMBOS();
     }
       
